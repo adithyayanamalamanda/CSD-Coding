@@ -1,0 +1,4 @@
+handling multiple clusters
+----------------------------------
+sometimes, you may have multiple clusters in a graph. in such a case, the DFS / BFS algorithm must be modified in such a way - that these algorithms consider every vertex as a root.
+

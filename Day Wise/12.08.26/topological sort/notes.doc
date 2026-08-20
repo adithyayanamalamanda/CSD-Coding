@@ -1,0 +1,23 @@
+                                Topological sort
+                                -----------------
+can sorting be applied to the graph ?
+    Yes - Topological sorting
+
+to sort graphs, a sorting technique topological sort has been invented. two popular algorithms run on these. 
+1. DFS based algorithm
+2. kahn's topological sort
+
+DFS bases topological sort:
+-----------------------------
+A DFS bases topolgical sort is a representation of linear ordering of all the vertices in a graph. The only condition to perform topological sort, is that it should not contain any cycles (DAG).Topological sort is mostly used in the project managements tools such as maven, gradle etc..
+
+while arranging vertices in a linear order, topological sort says that - "in an edge (u,v), the vertex 'u' must be processed before the vertex 'v'"
+
+pseudo code:
+-------------
+1. in addition to the regular stack, you should take another stack. 
+2. push all the processed vertices in the second stack.
+3. iterate on the second stack and print all the vertices
+
+
+

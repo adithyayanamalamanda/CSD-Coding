@@ -1,0 +1,27 @@
+kahn's topological sort:
+-------------------------
+kahn's algorithm in order to from topological order constantly looks for the vertices that have no incoming edges and removes all outgoing edges from them.
+
+algorithm:
+----------
+1. finds the vertex that has no incoming edges.
+2. remove all outgoing edges from that vertex.
+3. add vertex to the topological order.
+4. repeat the process untill all the vertices are processed.
+
+implementation of algorithm:
+----------------------------
+-> to perform edge related operations, we use a graph property known as "degree". 
+-> A degree to a vertex is the number of incoming edges. A degree represnts how many incoming edges does a vertex have. A vertex with 0 degrees means there are no incoming edges.
+-> we use the "queue" data structure to process these vertices.
+
+implementation:
+----------------
+1. look for 0 degree vertices and add them to the queue.
+2. process the vertices one by one untill the queue is empty.
+    a. deque a vertex from the queue and add it in topological order.
+    b. decrement the degree of all its adjacent vetices (remove the outgoing edges)
+    c. add it into the queue if the degree if any adjacent vertex is reduced to zero.
+3. once all the vertices are processed, we print the order.
+
+
