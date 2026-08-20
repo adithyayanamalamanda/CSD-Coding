@@ -1,0 +1,11 @@
+cycle detection
+------------------
+cycle detection in graphs relies on different strategies depending on whether the graph is directed or undirected. in directed graph, DFS with recursion stack or topological sorting is used, while in undirected graphs, DFS with parent tracking or union - find is common.
+
+cycle detection in directed graph
+-----------------------------------
+DFS with recurcion stack
+-------------------------
+
+Directed graph (Kahn's Topological sort)
+-------------------------------------------
